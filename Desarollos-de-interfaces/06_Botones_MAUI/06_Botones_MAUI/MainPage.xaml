@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_06_Botones_MAUI.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Button x:Name="btn1" Text="Boton1" BackgroundColor="Blue" HeightRequest="70" WidthRequest="200"
+                FontFamily="Verdana" FontSize="16" FontAttributes="Bold" Margin="30" BorderWidth="2" BorderColor="Yellow" Clicked="boton3" HorizontalOptions="Center"/>
+
+            <Button x:Name="Boton2">
+                <Button.Text>Boton2</Button.Text>
+                <Button.BackgroundColor>Blue</Button.BackgroundColor>
+                <Button.HeightRequest>70</Button.HeightRequest>
+                <Button.WidthRequest>200</Button.WidthRequest>
+                <Button.FontFamily>Verdana</Button.FontFamily>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontAttributes>Bold</Button.FontAttributes>
+                <Button.Margin>30</Button.Margin>
+                <Button.BorderWidth>2</Button.BorderWidth>
+                <Button.BorderColor>Yellow</Button.BorderColor>
+                <Button.HorizontalOptions>Center</Button.HorizontalOptions>
+            </Button>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
