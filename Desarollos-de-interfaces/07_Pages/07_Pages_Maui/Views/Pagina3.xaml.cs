@@ -6,4 +6,9 @@ public partial class Pagina3 : ContentPage
 	{
 		InitializeComponent();
 	}
+
+     async void CambiarPaginaP(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new PaginaNavegacion());
+    }
 }

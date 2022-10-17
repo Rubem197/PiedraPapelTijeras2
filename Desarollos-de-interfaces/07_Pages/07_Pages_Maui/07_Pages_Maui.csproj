@@ -55,6 +55,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\..\03_HelloWorld\03_HelloWorld_EntidadesEstandar\03_HelloWorld_EntidadesEstandar.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="PaginaNavegacion.xaml.cs">
+	    <DependentUpon>PaginaNavegacion.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Views\Pagina3.xaml.cs">
 	    <DependentUpon>Pagina3.xaml</DependentUpon>
 	  </Compile>
@@ -70,6 +77,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="PaginaNavegacion.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Pagina3.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

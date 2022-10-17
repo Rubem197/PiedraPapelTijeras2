@@ -5,11 +5,18 @@
              Title="Pagina3">
     <VerticalStackLayout>
         <Label 
-            Text="Hola soy la Pagina"
+            Text="Hola soy la Pagina3"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             FontSize="20"/>
-        
-        
+
+        <Button 
+                Text="Pulsa para cambiar de página"
+                Clicked="CambiarPaginaP"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center"
+               />
+
+
     </VerticalStackLayout>
 </ContentPage>

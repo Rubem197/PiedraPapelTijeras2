@@ -6,6 +6,6 @@ public partial class App : Application
 	{
 		InitializeComponent();
 
-		MainPage = new Views.PaginaTabbed();
+		MainPage = new NavigationPage(new PaginaNavegacion());
 	}
 }
