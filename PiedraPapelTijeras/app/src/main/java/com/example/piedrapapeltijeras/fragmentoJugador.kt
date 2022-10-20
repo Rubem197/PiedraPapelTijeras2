@@ -1,4 +1,4 @@
-package com.example.fragmentocolores
+package com.example.piedrapapeltijeras
 
 import android.content.Context
 import android.os.Bundle
@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
+import android.widget.ImageView
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,10 +15,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [GreenFragment.newInstance] factory method to
+ * Use the [fragmentoJugador.newInstance] factory method to
  * create an instance of this fragment.
  */
-class GreenFragment : Fragment() {
+class fragmentoJugador : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,7 +37,7 @@ class GreenFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_green, container, false)
+        return inflater.inflate(R.layout.fragment_fragmento_jugador, container, false)
     }
 
     override fun onAttach(context: Context) {
@@ -48,7 +48,9 @@ class GreenFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<Button>(R.id.btnVerde).setOnClickListener{listener?.onClickButtonSumar()}
+        view.findViewById<ImageView>(R.id.imgPapel3).setOnClickListener{listener?.pulsarPapel()}
+        view.findViewById<ImageView>(R.id.imgPiedra3).setOnClickListener{listener?.pulsarPiedra()}
+        view.findViewById<ImageView>(R.id.imgTijeras3).setOnClickListener{listener?.pulsarTijeras()}
     }
 
     companion object {
@@ -58,12 +60,12 @@ class GreenFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment GreenFragment.
+         * @return A new instance of fragment fragmentoJugador.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            GreenFragment().apply {
+            fragmentoJugador().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
